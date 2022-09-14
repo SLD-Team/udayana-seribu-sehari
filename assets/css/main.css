@@ -10,21 +10,25 @@
   font-weight: 400;
   src: url("../fonts/poppins/Poppins-Regular.ttf");
 }
+
 @font-face {
   font-family: "Poppins";
   font-weight: 500;
   src: url("../fonts/poppins/Poppins-Medium.ttf");
 }
+
 @font-face {
   font-family: "Poppins";
   font-weight: 600;
   src: url("../fonts/poppins/Poppins-SemiBold.ttf");
 }
+
 @font-face {
   font-family: "Poppins";
   font-weight: 700;
   src: url("../fonts/poppins/Poppins-Bold.ttf");
 }
+
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
@@ -80,12 +84,10 @@ p {
   font-weight: 500;
   font-size: 2rem;
 }
-.btn-green:hover {
-  position: relative;
-  top: 10px;
-  left: 10px;
-  background: #035755;
-  color: #ffffff;
+
+a.btn-green:hover {
+  background-color: transparent;
+  color: #035755 !important;
 }
 
 .btn-top button {
@@ -96,8 +98,8 @@ p {
   border: none;
   margin-left: auto;
 }
+
 .btn-top button:hover {
-  color: #fa5652;
   border: none;
 }
 
@@ -106,14 +108,29 @@ section {
 }
 
 .navbar-brand {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 500;
   color: #035755;
 }
 
 .nav-link {
+  font-size: 2.5rem;
+  color: #035755 !important;
+}
+
+footer .nav-link {
   font-size: 2rem;
   color: #035755 !important;
+}
+
+.navbar-toggler {
+  height: 30px;
+  width: 30px;
+}
+
+.navbar-toggler-icon {
+  height: 15px;
+  width: 15px;
 }
 
 .nav-item:not(:last-child) {
@@ -146,17 +163,17 @@ section {
 
 .scrolled.slide-left {
   -webkit-animation: slide-in-left 1s ease-in-out both;
-          animation: slide-in-left 1s ease-in-out both;
+  animation: slide-in-left 1s ease-in-out both;
 }
 
 .scrolled.slide-right {
   -webkit-animation: slide-in-right 1s ease-in-out both;
-          animation: slide-in-right 1s ease-in-out both;
+  animation: slide-in-right 1s ease-in-out both;
 }
 
 .scrolled.slide-bottom {
   -webkit-animation: slide-in-bottom 1s ease-in-out both;
-          animation: slide-in-bottom 1s ease-in-out both;
+  animation: slide-in-bottom 1s ease-in-out both;
 }
 
 @-webkit-keyframes slide-in-left {
@@ -164,96 +181,118 @@ section {
     transform: translateX(-100px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
+
 @keyframes slide-in-left {
   0% {
     transform: translateX(-100px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
+
 @-webkit-keyframes slide-in-right {
   0% {
     transform: translateX(100px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
+
 @keyframes slide-in-right {
   0% {
     transform: translateX(100px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
+
 @-webkit-keyframes slide-in-bottom {
   0% {
     transform: translateY(50px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
+
 @keyframes slide-in-bottom {
   0% {
     transform: translateY(50px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
+
 @media (max-width: 1024px) {
   html {
     font-size: 40%;
   }
+
   section {
     padding-top: 10rem;
   }
+
   #hero {
     background-image: none;
   }
+
   nav {
     padding: 0 10px !important;
     height: 50px;
   }
+
   .navbar {
     padding-top: 0 !important;
   }
+
   .nav-item:not(:last-child) {
     margin-right: 0;
   }
+
   .nav-link {
     font-size: 2.9rem;
     line-height: 3.5rem;
     margin-bottom: 20px;
   }
+
   .hero-body {
     padding: 5rem 0 0;
   }
+
   section {
     text-align: center;
   }
+
   .offcanvas {
     width: 80% !important;
   }
 }
+
 .hori-timeline .events {
   border-top: 3px solid #e9ecef;
 }
@@ -291,10 +330,12 @@ section {
     width: 24%;
     padding-top: 45px;
   }
+
   .hori-timeline .events .event-list .event-date {
     top: -12px;
   }
 }
+
 .bg-soft-primary {
   background-color: rgba(64, 144, 203, 0.3) !important;
 }
