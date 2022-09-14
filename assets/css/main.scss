@@ -8,25 +8,25 @@
 @font-face {
   font-family: "Poppins";
   font-weight: 400;
-  src: url("/assets/fonts/poppins/Poppins-Regular.ttf");
+  src: url("../fonts/poppins/Poppins-Regular.ttf");
 }
 
 @font-face {
   font-family: "Poppins";
   font-weight: 500;
-  src: url("/assets/fonts/poppins/Poppins-Medium.ttf");
+  src: url("../fonts/poppins/Poppins-Medium.ttf");
 }
 
 @font-face {
   font-family: "Poppins";
   font-weight: 600;
-  src: url("/assets/fonts/poppins/Poppins-SemiBold.ttf");
+  src: url("../fonts/poppins/Poppins-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "Poppins";
   font-weight: 700;
-  src: url("/assets/fonts/poppins/Poppins-Bold.ttf");
+  src: url("../fonts/poppins/Poppins-Bold.ttf");
 }
 
 $red: #fa5652;
@@ -256,6 +256,7 @@ section {
 .hori-timeline .events {
   border-top: 3px solid #e9ecef;
 }
+
 .hori-timeline .events .event-list {
   display: block;
   position: relative;
@@ -263,6 +264,7 @@ section {
   padding-top: 45px;
   margin-right: 0;
 }
+
 .hori-timeline .events .event-list:before {
   content: "";
   position: absolute;
@@ -270,6 +272,7 @@ section {
   border-right: 2px dashed #dee2e6;
   top: 0;
 }
+
 .hori-timeline .events .event-list .event-date {
   position: absolute;
   top: 38px;
@@ -280,28 +283,35 @@ section {
   border-radius: 4px;
   padding: 2px 4px;
 }
+
 @media (min-width: 1140px) {
   .hori-timeline .events .event-list {
     display: inline-block;
     width: 24%;
     padding-top: 45px;
   }
+  
   .hori-timeline .events .event-list .event-date {
     top: -12px;
   }
 }
+
 .bg-soft-primary {
   background-color: rgba(64, 144, 203, 0.3) !important;
 }
+
 .bg-soft-success {
   background-color: rgba(71, 189, 154, 0.3) !important;
 }
+
 .bg-soft-danger {
   background-color: rgba(231, 76, 94, 0.3) !important;
 }
+
 .bg-soft-warning {
   background-color: rgba(249, 213, 112, 0.3) !important;
 }
+
 .card {
   border: none;
   margin-bottom: 24px;
