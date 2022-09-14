@@ -226,6 +226,11 @@ section {
     background-image: none;
   }
 
+  nav {
+    padding: 0 10px !important;
+    height: 50px;
+  }
+
   .navbar {
     padding-top: 0 !important;
   }
@@ -315,6 +320,4 @@ section {
 .card {
   border: none;
   margin-bottom: 24px;
-  -webkit-box-shadow: 0 0 13px 0 rgba(236, 236, 241, 0.44);
-  box-shadow: 0 0 13px 0 rgba(236, 236, 241, 0.44);
 }
